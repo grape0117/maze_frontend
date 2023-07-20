@@ -6,8 +6,11 @@ import HomePage from "./components/pages/HomePage";
 import PortfolioPage from "./components/pages/Portfolio";
 // import FeedPage from "./components/pages/Feed";
 import DropzoneComponent from "./components/pages/Dropzone"
+import ModelComponent from "./components/pages/Modal"
+
 import { resolve } from "path";
 import { setTimeout } from "timers/promises";
+import ModalComponent from "./components/pages/Modal";
 
 const FeedPage = React.lazy(() => import("./components/pages/Feed"))
 
@@ -37,7 +40,8 @@ function App() {
             <Route path="/home" element={<HomePage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route path="/feed" element={<FeedPage />} />
-            <Route path="/drop" element={<DropzoneComponent/>} />
+            {/* <Route path="/drop" element={<DropzoneComponent/>} /> */}
+            <Route path="/modal" element={<ModalComponent/>} />
           </Routes>
         </React.Suspense>
       </BrowserRouter>

@@ -1,8 +1,10 @@
 import { useRef, useState, FormEvent, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { Button, Form } from "react-bootstrap";
 import { useSelector } from "react-redux";
 import loginFetch from "../../redux/actions/loginAction";
 import { store, RootState, resetStoreAction } from "../../redux/store/store";
+
 
 const LoginForm = () => {
   const dispatch = store.dispatch;
@@ -13,6 +15,7 @@ const LoginForm = () => {
     username: "",
     password: "",
   });
+  const navigate = useNavigate();
 
   const handleChange = (e: { target: { name: string; value: string } }) => {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
@@ -25,6 +28,7 @@ const LoginForm = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     loadData();
+    navigate('/home')
   };
 
   useEffect(() => {

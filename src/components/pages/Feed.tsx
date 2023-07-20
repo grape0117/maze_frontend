@@ -79,7 +79,7 @@ function FeedPage() {
 
                 </Col>
             </div>
-            <div className="col-md-9 px-5">
+            <div className="col-md-9">
               {/* <div className="p-5 bg-primary"></div> */}
               <Row className='px-5' style={{background: drakgreen, height: '70vh', justifyContent: 'center', alignItems: 'center'}}>
                 <div className='text-center px-3 py-3' style={{backgroundColor: mintgreen, alignItems: 'center'}}>

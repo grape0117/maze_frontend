@@ -105,6 +105,7 @@ export const getCollection = (id: number) => {
 };
 
 export const createCollection = (token: string, collection: Collection) => {
+  console.log("Here is collectionAciton", token)
   return async (dispatch: Dispatch<AnyAction>) => {
     dispatch(postCollectionRequest());
     try {
@@ -116,7 +117,6 @@ export const createCollection = (token: string, collection: Collection) => {
         formData.append("coverImage", collection.coverImage);
       }
       formData.append("keywords", (collection.keywords || []).join(","));
-
       const response = await fetch("http://localhost:8080/api/collections", {
         method: "POST",
         headers: {

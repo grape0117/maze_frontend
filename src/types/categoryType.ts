@@ -1,0 +1,16 @@
+export enum Category {
+    PAINTING = "Painting",
+    PHOTOGRAPHY = "Photography",
+    ILLUSTRATION = "Illustration",
+    GRAPHIC_DESIGN = "Graphic Design",
+    SCULPTURE = "Sculpture",
+    FASHION = "Fashion",
+    ARCHITECTURE = "Architecture",
+    FILM = "Film",
+    MUSIC = "Music",
+    LITERATURE = "Literature",
+    CRAFTS = "Crafts",
+    ART = "Art",
+    DESIGN = "Design",
+    OTHER = "Other",
+}

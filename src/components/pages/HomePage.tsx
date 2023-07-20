@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import Button from 'react-bootstrap/Button';
 
 import DropzoneComponent from './Dropzone';
+import ModalComponent from './Modal';
 
 const HomePage = () => {
 
@@ -102,14 +103,15 @@ const HomePage = () => {
                     <div className="row gx-5">
                       <div className="col">
                         <div className="p-3 text-center" style={{backgroundColor: drakgreen, height:'24vh'}}>
-                          {/* Upload Elaborate */}
-                          <DropzoneComponent />
+                          Upload Elaborate
+                          {/* <DropzoneComponent /> */}
                         </div>
                       </div>
                       <div className="col">
                         <div className="p-3 text-center" style={{backgroundColor: drakgreen, height:'24vh'}}>
                           {/* Upload Collection */}
-                          <DropzoneComponent />
+                          {/* <DropzoneComponent /> */}
+                          <ModalComponent modalTitle={"Collections"} />
                         </div>
                       </div>
                       <div className="col">

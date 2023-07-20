@@ -3,6 +3,7 @@ import 'mdb-ui-kit/css/mdb.min.css';
 import { MDBRipple } from 'mdb-react-ui-kit';
 import { useState } from "react";
 import { Container, Row, Col, Image, Navbar, Nav, Form, Button } from "react-bootstrap";
+import ModalComponent from './Modal';
 
 let Dark = '#28383A';
 let Dark_green = '#04B597';
@@ -91,7 +92,10 @@ function PortfolioPage() {
                     </div>
                     <div className='col-md-2'></div>
                     <div className='col-md-2'>
-                        <button type="button" className="btn" style={{backgroundColor: drakgreen}}>Edit/Follow</button>
+                        <div style={{backgroundColor: drakgreen}}>
+                            {/* Edit/Follow */}
+                            <ModalComponent />
+                        </div>
                     </div>
                 </div>
             </div>
